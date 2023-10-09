@@ -1,13 +1,8 @@
 import { plugin, type BunPlugin } from "bun";
 import { isAbsolute, join } from "path";
 import postcss, { type AcceptedPlugin } from "postcss";
+import { type Options } from "./types.d"
 import tailwindcss from "tailwindcss";
-
-export type Options = {
-    plugins?: AcceptedPlugin[];
-    inputFile: string;
-    outputFile: string;
-}
 
 export const bunPostcss = (options: Options): BunPlugin => {
     return {
