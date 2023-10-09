@@ -9,13 +9,12 @@
         "url": "https://github.com/zacharycoulter/bun-postcss.git"
     },
     "dependencies": {
-        "postcss": "^8.4.31",
-        "postcss-load-config": "^4.0.1"
+        "postcss": "^8.4.31"
     },
     "peerDependencies": {
         "typescript": "^5.0.0"
     },
     "devDependencies": {
-        "bun-types": "latest"
+        "bun-types": "lates"
     }
 }

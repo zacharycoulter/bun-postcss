@@ -13,11 +13,7 @@ Create a plugins.ts and add the following:
 import { plugin } from 'bun';
 import { bunPostcss } from "bun-postcss";
 
-plugin(bunPostcss({
-    plugins: [],
-    inputFile: "src/app.css",
-    outputFile: "src/static/styles.css",
-}));
+plugin(bunPostcss());
 
 ```
 
@@ -30,6 +26,8 @@ preload = ["./plugins.ts"]
 Then you are all set up and ready to configure PostCSS!
 
 ### Options
+
+To configure PostCSS, you can either add the options directly into the `bunPostcss({ ... })` call or create a `postcss.config.ts` file
 
 Most PostCSS runners accept two parameters:
 
