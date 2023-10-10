@@ -1,27 +1,36 @@
 {
-  "name": "@zacharycoulter/bun-postcss",
-  "description": "A PostCSS Bun plugin",
-  "version": "0.0.1",
-  "type": "module",
-  "scripts": {
-    "build": "bun build src/index.ts --outdir ./dist --target bun && cp ./package.json ./dist/package.json && cp ./bun.lockb ./dist/bun.lockb"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zacharycoulter/bun-postcss.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@zacharycoulter"
-  },
-  "dependencies": {
-    "lilconfig": "^2.1.0",
-    "postcss": "^8.4.31",
-    "yaml": "^2.3.2"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  }
+    "name": "bun-postcss",
+    "description": "A PostCSS Bun plugin",
+    "version": "0.1.0",
+    "module": "src/index.ts",
+    "main": "src/index.ts",
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/zacharycoulter/bun-postcss.git"
+    },
+    "keywords": [
+        "bun",
+        "postcss",
+        "bun-postcss",
+        "tailwind",
+        "autoprefixer"
+    ],
+    "author": "Zachary Coulter",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/zacharycoulter/bun-postcss/issues"
+    },
+    "homepage": "https://github.com/zacharycoulter/bun-postcss#readme",
+    "dependencies": {
+        "lilconfig": "^2.1.0",
+        "postcss": "^8.4.31",
+        "yaml": "^2.3.2"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "devDependencies": {
+        "bun-types": "latest"
+    }
 }
