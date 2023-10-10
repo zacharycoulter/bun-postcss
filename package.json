@@ -1,5 +1,5 @@
 {
-  "name": "bun-postcss",
+  "name": "@zacharycoulter/bun-postcss",
   "description": "A PostCSS Bun plugin",
   "version": "0.0.1",
   "type": "module",
@@ -11,7 +11,7 @@
     "url": "https://github.com/zacharycoulter/bun-postcss.git"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/@zacharycoulter"
   },
   "dependencies": {
     "lilconfig": "^2.1.0",
