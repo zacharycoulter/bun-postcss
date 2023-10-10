@@ -3,9 +3,8 @@
   "description": "A PostCSS Bun plugin",
   "version": "0.0.1",
   "type": "module",
-  "module": "src/index.ts",
   "scripts": {
-    "build": "bun build src/index.ts --outdir ./dist --target bun"
+    "build": "bun build src/index.ts --outdir ./dist --target bun && cp ./package.json ./dist/package.json && cp ./bun.lockb ./dist/bun.lockb"
   },
   "repository": {
     "type": "git",
