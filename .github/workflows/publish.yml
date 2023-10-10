@@ -8,13 +8,15 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install
+      - run: bun run build
       - uses: actions/setup-node@v3
         with:
           node-version: '20.x'
           registry-url: 'https://npm.pkg.github.com'
           scope: 'zacharycoulter'
-      - run: npm install
       - run: npm publish
+        working-directory: ./dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-

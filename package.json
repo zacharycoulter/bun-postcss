@@ -8,6 +8,9 @@
         "type": "git",
         "url": "https://github.com/zacharycoulter/bun-postcss.git"
     },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
     "dependencies": {
         "postcss": "^8.4.31"
     },
