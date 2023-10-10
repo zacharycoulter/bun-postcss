@@ -4,6 +4,9 @@
     "version": "0.0.1",
     "type": "module",
     "module": "src/index.ts",
+    "scripts": {
+        "build": "bun build src/index.ts --outdir ./dist --target bun"
+    },
     "repository": {
         "type": "git",
         "url": "https://github.com/zacharycoulter/bun-postcss.git"
