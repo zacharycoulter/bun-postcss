@@ -42,3 +42,26 @@ Common options:
 * `map`: [source map options].
 * `from`: the input file name (most runners set it automatically).
 * `to`: the output file name (most runners set it automatically).
+
+Read more here: https://github.com/postcss/postcss?tab=readme-ov-file#usage
+
+### Tailwind example
+
+Adding tailwind is easy.
+
+Run the following to install Tailwind:
+```
+bun add -D tailwindcss
+bunx tailwindcss init
+```
+
+In your PostCSS config add the Tailwind plugin:
+```
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+  }
+}
+```
+
+Then just set up Tailwind however you like! Read more here: https://tailwindcss.com/docs/installation/using-postcss
