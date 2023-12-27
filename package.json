@@ -1,7 +1,7 @@
 {
   "name": "bun-postcss",
   "description": "A PostCSS Bun plugin",
-  "version": "0.1.1",
+  "version": "0.2.0-beta.2",
   "module": "src/index.ts",
   "main": "src/index.ts",
   "type": "module",
