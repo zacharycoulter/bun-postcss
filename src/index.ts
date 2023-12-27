@@ -1,7 +1,6 @@
 import { isAbsolute, join } from "path";
 import postcss, { AcceptedPlugin } from "postcss";
-import postcssrc from "./loader";
-import { Config } from "./types";
+import postcssrc, { type Config } from "postcss-load-config"
 import { type BunPlugin } from "bun";
 
 export const bunPostcss = (config: Config | null = null): BunPlugin => ({
